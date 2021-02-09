@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    android:padding="5dp"
+    android:layout_gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastro e pre-visualização dos cadastros"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/buttonstyle"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:background="@drawable/bordas"
+        android:padding="5dp"
+        android:layout_marginTop="65dp"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/txtfechar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="#FFFF"
+            android:text="X"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:background="@drawable/cerclebackground"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_evento"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/evento2" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/box_lista"
+                android:background="@drawable/buttonstyle"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:id="@+id/txt_list_event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    android:background="@drawable/buttonstyle"
+                    android:textColor="#FFF"
+                    android:text="Lista de eventos"
+                    />
+
+
+                <ListView
+                    android:id="@+id/lista_eventos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ListView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+
+            android:layout_marginTop="45dp">
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fechar"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/buttonstyle"
+            android:textColor="#FFF"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btn_cad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adicionar"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/buttonstyle"
+            android:textColor="#FFF"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

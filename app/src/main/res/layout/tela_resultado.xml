@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/montanha"
+    android:orientation="horizontal"
+
+    >
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="308dp"
+        android:textAlignment="center"
+        android:textColor="#9A9FAF"
+        android:textSize="32sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imagem_resultado"
+        android:layout_width="202dp"
+        android:layout_height="202dp"
+        app:layout_constraintBottom_toTopOf="@+id/resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.50" />
+
+    <ImageView
+        android:id="@+id/jogador"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        app:layout_constraintBottom_toTopOf="@+id/botao_voltar"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comentario"
+        app:layout_constraintVertical_bias="0.50" />
+
+    <TextView
+        android:id="@+id/suajogada"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="Sua jogada"
+        android:textColor="#9A9FAF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jogador" />
+
+    <TextView
+        android:id="@+id/maquinajogada"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="Máquina"
+        android:textColor="#9A9FAF"
+        app:layout_constraintBottom_toTopOf="@+id/botao_voltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/computador"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <ImageView
+        android:id="@+id/computador"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        app:layout_constraintHorizontal_bias="0.80"
+        app:layout_constraintBottom_toTopOf="@+id/botao_voltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comentario"
+        app:layout_constraintVertical_bias="0.50" />
+
+
+    <TextView
+        android:id="@+id/comentario"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:textAlignment="center"
+        android:textColor="#9A9FAF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultado" />
+
+    <Button
+        android:id="@+id/botao_voltar"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+
+        android:background="@drawable/buttonstyle"
+        android:text="Voltar"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comentario"
+        app:layout_constraintVertical_bias="0.72" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioEvento"
+    android:padding="5dp"
+    android:layout_gravity="center"
+    android:background="@drawable/montanha"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/txt_cad_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastro de Eventos"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/buttonstyle"/>
+
+
+    <LinearLayout
+        android:id="@+id/fundo_form"
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        android:background="@drawable/fundo"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+      >
+
+
+            <LinearLayout
+
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/buttonstyle">
+                <TextView
+                    android:id="@+id/txtclose"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:textColor="#FFFF"
+                    android:text="X"
+                    android:textStyle="bold"
+                    android:layout_gravity="end"
+                    android:gravity="center"
+                    android:background="@drawable/cerclebackground"/>
+
+                <LinearLayout
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txt_nome_event"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textColor="#FFF"
+                        android:text="Nome do Evento"
+                        android:textSize="20sp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/nome_evento"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bgwhite"
+                    android:textColor="#2f333f"
+                    android:textAlignment="center"
+                    android:drawableEnd="@drawable/mapas"
+
+                    />
+                <TextView
+                    android:id="@+id/txt_desc_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="#FFFF"
+                    android:text="Descrição do Evento"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"
+                    />
+                <EditText
+                    android:id="@+id/descricao_evento"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bgwhite"
+                    android:textColor="#2f333f"
+                    android:textAlignment="center"
+                    android:drawableEnd="@drawable/ic_plan"
+                    />
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+                        <TextView
+                            android:id="@+id/data_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:textColor="#FFFF"
+                            android:text="Data do Evento"
+                            android:textAlignment="center"
+                            android:textSize="20sp"
+                            android:layout_marginTop="15dp"
+                            />
+                        <EditText
+                            android:id="@+id/data_evento"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bgwhite"
+                            android:textColor="#2f333f"
+                            android:textAlignment="center"
+                            android:editable="false"
+                            android:drawableEnd="@drawable/calendario"
+                            />
+
+                </LinearLayout>
+
+               <TextView
+                   android:layout_width="20dp"
+                   android:layout_height="0dp"
+                   />
+
+                <LinearLayout
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        android:id="@+id/hora_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textColor="#FFFF"
+                        android:text="Hora do Evento"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:layout_marginTop="15dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/hora_env"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bgwhite"
+                        android:drawableEnd="@drawable/relogio"
+                        android:editable="false"
+
+                        android:textAlignment="center"
+                        android:textColor="#2f333f" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+
+                    android:layout_marginTop="60dp">
+                    <Button
+                        android:id="@+id/btn_fechar_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fechar"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/buttonstyle"
+                        android:textColor="#FFF"
+
+                        />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:id="@+id/btn_listar_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Listar"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/buttonstyle"
+                        android:textColor="#FFF"
+
+                        />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:id="@+id/btn_cad_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adicionar"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/buttonstyle"
+                        android:textColor="#FFF"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

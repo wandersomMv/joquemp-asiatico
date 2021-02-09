@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="600dp"
+    android:background="@drawable/fundo"
+    android:padding="5dp"
+    android:layout_gravity="center">
+    <TextView
+        android:id="@+id/fechar_inversor"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="#FFFF"
+        android:text="X"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:background="@drawable/cerclebackground"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+
+            android:id="@+id/icone_inv"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/coruja"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/nome_bixo_inv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bixinho Fofinho"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/nick_bixo_inv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NickAleatorio"
+            android:textColor="#FFF"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/box_msg"
+            android:background="@drawable/buttonstyle"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="170dp">
+
+
+            <TextView
+                android:id="@+id/texto_orientacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Digite a palavra a ser invertida"
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+
+            <EditText
+
+                android:layout_marginTop="25dp"
+                android:id="@+id/input_inversor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bgwhite"
+                android:textAlignment="center"
+                android:textColor="#2f333f"
+                android:textSize="18sp"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fechar_inv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Fechar"
+        android:textColor="#FFF"/>
+
+    <Button
+        android:id="@+id/btn_inveter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Inverter"
+        android:textColor="#FFF"
+
+        />
+
+
+</LinearLayout>
